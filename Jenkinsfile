@@ -178,7 +178,7 @@ ENDSSH
                         </body>
                         </html>
                     """,
-                    to: 'itsonlykartik@gmail.com, games.princeraj@gmail.com, meetwithshubhamsharma@gmail.com',
+                    to: 'itsonlykartik@gmail.com',
                     from: 'mithilastackclient@gmail.com',
                     replyTo: 'mithilastackclient@gmail.com',
                     mimeType: 'text/html'
