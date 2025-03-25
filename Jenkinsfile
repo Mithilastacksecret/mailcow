@@ -133,7 +133,6 @@ pipeline {
                                     sudo -E docker-compose build --parallel --force-rm --no-cache
                                     echo "Starting new containers..for ${APP_NAME} ${BUILD_NUMBER} (\$NEW_COLOR)"
                                     sudo -E docker-compose up -d --force-recreate --remove-orphans --renew-anon-volumes > /dev/null 2>&1
-                                    
                                     echo "✓ Deployment successful - of ${APP_NAME} Version ${BUILD_NUMBER} is running"
 ENDSSH
                             """
