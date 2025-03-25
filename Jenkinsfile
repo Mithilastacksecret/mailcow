@@ -9,8 +9,8 @@ pipeline {
         APP_DIR = "mailcow" // Directory where the application is stored on the server
         APP_NAME = "mailcow" // Name of the applicaton same as in the .env file and in env make this as same github repo name
         PATH = "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
-        REMOTE_DIR = "/home/${SSH_USERNAME}/${APP_DIR}/${APP_NAME}/"
-        DEPLOY_DIR = "/home/${SSH_USERNAME}/${APP_DIR}/${APP_NAME}/"
+        REMOTE_DIR = "/opt/${APP_DIR}/"
+        DEPLOY_DIR = "/opt/${APP_DIR}/"
         DEPLOY_TIMEOUT = '3000' // 5 minutes timeout for deployment
         HEALTH_CHECK_RETRIES = '5'
         HEALTH_CHECK_INTERVAL = '10'
